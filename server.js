@@ -14,35 +14,7 @@ server
             res.end();
         })
     })
-    .get('/script.js', (req, res) => {
-        fs.readFile('./script.js', (err, scrip) => {
-            if (err) {
-                throw new Error(err);
-            }
-            res.write(scrip);
-//            console.log(scrip);
-            console.log('read script...');
-            res.end();
-        })
-    })
-    .get('/style.css', (req, res) => {
-        fs.readFile('./style.css', (err, html) => {
-            if (err) {
-                throw new Error(err);
-            }
-            res.write(html);
-            res.end();
-        })
-    })
-    .get('/ava.png', (req, res) => {
-        fs.readFile('./ava.png', (err, html) => {
-            if (err) {
-                throw new Error(err);
-            }
-            res.write(html);
-            res.end();
-        })
-    })
+    .use('/static', express.static('public'))
     .listen(port, () => {
         console.log('hello server. port:', port);
     });
