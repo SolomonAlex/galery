@@ -15,6 +15,10 @@ body {
     background-color: yellowgreen;
     width: 310px;
     padding: 10px;
+    border: 1px solid coral;
+    /* border-style: solid;
+    border: 2px;
+    border-color: coral; */
 }
 .image {
     width: 300px;
