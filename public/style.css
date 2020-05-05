@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: yellowgreen;
+    width: 310px;
+    padding: 10px;
+    border: 1px solid coral;
+    /* border-style: solid;
+    border: 2px;
+    border-color: coral; */
+}
+.image {
+    width: 300px;
+}
+
+.image-wrapper {
+    margin-bottom: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 0 10px 10px;
+}
+
+.header-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.header-title {
+    margin-left: 10px;
+}
